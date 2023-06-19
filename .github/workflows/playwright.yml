@@ -6,12 +6,12 @@ jobs:
   playwrighttests:
     runs-on: ubuntu-latest
     container:
-      image: mcr.microsoft.com/playwright:v1.29.1-focal
+      image: mcr.microsoft.com/playwright:v1.34.0-jammy
       env:
         ADMIN_PASSWORD: Admin123
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
       - name: Run tests
         run: |
           echo " Start the shopping store application"
