@@ -15,6 +15,8 @@ jobs:
       - name: Run tests
         run: |
           echo " Start the shopping store application"
+          current_directory = $(pwd)
+          echo $current_directory
           chmod +x ./playwright-practice/playwright-practice/shopping-store-linux-arm64 &
           current_directory = $(pwd)
           echo $current_directory
