@@ -8,5 +8,5 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        name: say hello
+      - name: say hello
         run: echo Hello there. 
