@@ -4,7 +4,7 @@ import { Navigation } from "../page-objects/Navigation"
 import { Checkout} from "../page-objects/Checkout"
 
 
-test.only('new user journey', async({ page }) =>{
+test('new user journey', async({ page }) =>{
     const productPage = new ProductPage(page)
     await productPage.visit()
 

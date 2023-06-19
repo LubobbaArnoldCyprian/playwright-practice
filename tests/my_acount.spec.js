@@ -4,7 +4,7 @@ import { getLoginToken } from "../api-calls/getLoginToken"
 import { adminDetails } from "../data/adminDetails"
 
 
-test.only(" My account using cookie injection ", async ({ page }) =>{
+test(" My account using cookie injection ", async ({ page }) =>{
     // Make a request to get login token
     const loginToken =  await getLoginToken(adminDetails.username, adminDetails.password)
     console.warn({loginToken})
