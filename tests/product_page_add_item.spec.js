@@ -23,8 +23,5 @@ test("product page add to basket", async ({ page }) => {
     await checkOut.click()
     await page.waitForURL("/basket")
 
-    // chmod +x /Users/arnold/Desktop/playwright/shopping-store-mac-amd64
 
 })
-
-
